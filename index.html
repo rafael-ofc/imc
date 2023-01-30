@@ -1,78 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zap Zap Web</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html,
-        body,
-        #app {
-            height: 100%;
-        }
-
-        #app {
-            display: flex;
-        }
-
-        .contacts {
-            flex: 1;
-            background: #111;
-            max-height: 100%;
-            overflow-y: auto;
-        }
-
-        .fill {
-            height: 300vh;
-        }
-
-        .chat {
-            display: flex;
-            flex-direction: column;
-
-            flex: 3;
-            background: #333;
-        }
-
-        .chat-header {
-            background: #777;
-            height: 40px;
-        }
-
-        .chat-messages {
-            flex: 1;
-        }
-
-        .message-box {
-            background: #555;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
 </head>
 
 <body>
-    <div id="app">
-        <nav class="contacts">
-            <div class="fill"></div>
-        </nav>
-
-        <article class="chat">
-            <header class="chat-header"></header>
-
-            <div class="chat-messages"></div>
-
-            <article class="message-box">
-                <input type="text" class="message-box-input" />
-            </article>
-        </article>
-    </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>
